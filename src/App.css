@@ -1,0 +1,32 @@
+:root {
+  --primary-background: #38250e;
+  --primary-color: #f0e5cb;
+}
+
+body {
+  background-color: #38250e;
+  color: burlywood;
+  background-image: url(./assets/bg-coffee.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  padding: 4em;
+}
+
+main {
+  background-color: #38250e;
+  color: #f0e5cb;
+  border: 4px solid #f0e5cb;
+  border-radius: 24px;
+}
+
+header {
+  width: 100%;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(1.2em + 1.2vw);
+  border-bottom: 2px solid #f0e5cb;
+}
