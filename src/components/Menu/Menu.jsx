@@ -1,3 +1,4 @@
+import MenuItem from "./MenuItem";
 import { useState } from "react";
 import "./menu.css"
 
@@ -22,19 +23,19 @@ export default function Menu() {
 				<button onClick={() => getCoffees("iced")}>Iced Coffees</button>
 			</div>
 			{/* if no coffees are listed then h2 if coffees then produce a list of coffee titles  */}
-			{!coffees ? (
-				<h2>{message}</h2>
-			) : (
-				<section className="coffee-container">
-					{coffees.map((coffee) => (
-						<div key={coffee.id} className="coffee-card">
-							<img src={coffee.image} alt={coffee.title} />
-							<h3> {coffee.title}</h3>
-							<p>{coffee.description}</p>
-						</div>
+			{!coffees 
+				? <h2>{message}</h2>
+				: <section className="coffee-container">
+					{coffees.map((item) => (
+						<MenuItem 
+							key={item.id}
+							image={item.image}
+							title={item.title}
+							description={item.description}
+						/>
 					))}
 				</section>
-			)}
+			}
 		</article>
 	);
 }
