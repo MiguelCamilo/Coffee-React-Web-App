@@ -5,7 +5,7 @@ Project Link: (https://beau-cafe-react-webapp.web.app/)
 
 ## Lessons Learned
 
-What did you learn while building this project? What challenges did you face and how did you overcome them?
+What did you learn while building this project?
 
 - Put into practice *useState()* and learned how to *.map()* through an array of an API using *fetch()*
 
